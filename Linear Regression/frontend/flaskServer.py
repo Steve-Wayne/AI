@@ -20,7 +20,8 @@ def predictPrice():
         data = np.array([area, bedroom, age], dtype=float)
         output = model.predict([data])
 
-    return render_template("index.html", result = output)
-
+return render_template("index.html", result = output)
 if __name__=="__main__":
-    app.run(debug=True, port=5500)
+// AI FIX START
+    app.run(debug=False, port=5500)
+// AI FIX END
